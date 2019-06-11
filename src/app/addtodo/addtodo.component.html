@@ -1,0 +1,31 @@
+<app-particles></app-particles>
+<div class="container">
+    
+    <div class="entername">My Todo List</div>
+    <div class="addtask">
+      <div class="addtaskhead">
+        <div class="input1">
+          <input type="text" #getinput [(ngModel)]="textname" (keydown)="onKeydown($event)" id="addtask">
+          <button class="addbtn" (click)="addtodo(getinput, $event)" id="addtaskbtn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+        <div class="input2">
+            <angular2-date-picker [(ngModel)]="date" (onDateSelect)="onDateSelect($event)" [settings]="settings"></angular2-date-picker>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="showdate" *ngIf="showseldate">{{selectdate | date:'mediumDate'}}</div>
+      <div class="todolist">
+        <ul>
+          <li *ngFor="let list of todoarrnew; let i = index">{{list.name}} 
+            <div class="updatetodo" id="id{{i}}"><input type="text" id="input{{i}}" value="{{list.name}}"><button (click)="updatelist(list.id, i)">UPDATE</button></div>
+           <div class="icons"> <span><i class="fa fa-edit" (click)="editlist(list.id, i)"></i></span> <span><i class="fa fa-trash-o" (click)="deletelist(list.id)"></i></span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="datepicker" *ngIf="showundo" (click)="undolist()">
+      
+      <i  class="fa fa-undo" aria-hidden="true"></i>
+  </div>

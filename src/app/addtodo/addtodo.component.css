@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+.container{
+   /* position: absolute;
+     background: #000; 
+    width: 100%;
+    height: 100%;*/
+    padding: 40px 10px 20px 10px;
+    position: relative;
+    z-index: 2;
+}
+.entername{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.addtask{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+.addtaskhead{
+    padding: 20px;
+    background: #17b3a3;
+    -webkit-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+
+}
+.addtaskhead .input1{
+    position: relative;
+    float: left;
+    width: 90%;
+    
+}
+.addtaskhead .input2{
+    float: right;
+    width: 50px;
+}
+.clear{
+    clear: both;
+}
+.addtaskhead .input1 input{
+    width: 100%;
+    height: 50px;
+    border: solid 1px #ffffff;
+    border-radius: 50px;
+    background: none;
+    outline: none;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+}
+.addtaskhead .input1 .addbtn{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background: orange;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+
+}
+.todolist{
+
+}
+.todolist ul{
+   list-style: none;
+   margin: 10px 0px 0px 0px;
+   padding: 0px; 
+}
+.todolist ul li{
+    position: relative;
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    -webkit-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27); 
+}
+.icons{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+
+}
+.icons span{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #858585;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.icons span:hover{
+    color: #000000;
+}
+.updatetodo{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding-left: 20px;
+    display: none;
+    width: 90%;
+}
+.updatetodo input{
+    height: 35px;
+    width: 83%;
+    outline:none;
+    border: none;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+}
+.updatetodo button{
+    height: 35px;
+    margin-left: 10px;
+    border: none;
+    background: #17b3a3;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+.datepicker{
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    height: 80px;
+    width: 80px;
+    padding: 20px 30px 30px 29px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 25px;
+    background: #17b3a3;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+transition: all 0.5s linear;
+}
+.datepicker:hover{
+    background: orange;  
+}
+.wc-input{
+    display: none;
+}
+:host/deep/.wc-date-container{
+    background: none !important;
+    border: none !important;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+:host/deep/.wc-date-container span{
+    display: none;
+}
+:host/deep/.wc-date-container i{
+    color: #ffffff !important;
+}
+:host/deep/.wc-banner{
+    background: #17b3a3 !important;  
+}
+:host/deep/.wc-details{
+    background: #0d887c !important;
+}
+:host/deep/.year-title{
+    background: #0d887c !important;
+}
+:host/deep/.selected-day > span{
+    background: #17b3a3 !important; 
+    border: 1px solid #bcdbd8 !important;
+}
+:host/deep/.selected-day > span:hover{
+    background: #17b3a3 !important; 
+    border: 1px solid #bcdbd8 !important;
+}
+:host/deep/.calendar-days{
+ color:#333333 !important;
+}
+:host/deep/.cal-util > .ok{
+    color:#333333 !important;
+}
+:host/deep/.winkel-calendar table td:hover > span{
+    background: #0d887c !important; 
+}
+.showdate{
+    background:#0d887c;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    margin-top: 0px;
+    text-align: center;
+}

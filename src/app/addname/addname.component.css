@@ -1,0 +1,50 @@
+.container{
+    position: absolute;
+    /* background: #000; */
+    width: 100%;
+    height: 100%;
+}
+.entername{
+    font-size: 20px;
+}
+.addname{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27);
+box-shadow: 0px 3px 11px -8px rgba(0,0,0,0.27); 
+}
+.addname .row{
+    margin-bottom: 15px;
+}
+.addname .row .entername{
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+}
+.addname .row input{
+    border: solid 1px #868686;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.addname .row button{
+    border: solid 1px #097200;
+    background: #097200;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.registernow{
+    text-align: center;
+    widows: 100%;
+}
